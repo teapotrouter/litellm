@@ -5643,7 +5643,7 @@ class TestAzureProxyRouteCrossIndexAuthorization:
                 "litellm.proxy.pass_through_endpoints.llm_passthrough_endpoints.is_allowed_to_call_vector_store_endpoint"
             ) as mock_is_allowed,
             patch(
-                "litellm.proxy.pass_through_endpoints.llm_passthrough_endpoints.assert_user_can_access_vector_store",
+                "litellm.proxy.pass_through_endpoints.llm_passthrough_endpoints.assert_user_can_call_vector_store_passthrough",
                 new=AsyncMock(),
             ),
             patch(
